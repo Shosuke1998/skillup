@@ -1,0 +1,35 @@
+<header>
+  <div class="header-left">
+    <div class="login-btn">
+      <%= link_to('ログインする',"#",class:"btn") %>
+    </div>
+    <div class="new-regist-btn">
+      <%= link_to('新規登録',"#",class:"btn") %>
+    </div>
+  </div> 
+  <div class ="header-right">
+    <div class="image-space">
+      <%= image_tag("watermark.png",class:"image") %>
+    </div>
+    <p>Skillup</p>
+  </div>
+</header>
+<div class="title">
+  <h1>英単語学習ページ</h1>
+</div>
+<div class="lists">
+  <ul>
+    <li class="list">
+      <%= link_to('英単語を暗記する',study_skills_path,class:"btn") %>
+    </li>
+    <li class="list">
+      <%= link_to('英単語テストをする',"#",class:"btn") %>
+    </li>
+    <li class="list">
+      <%= link_to('ランキングを見る',"#",class:"btn")%>
+    </li>
+    <li class="list">
+      <%= link_to('点数を更新する',"#",class:"btn")%>
+    </li>
+  </ul>
+</div>
