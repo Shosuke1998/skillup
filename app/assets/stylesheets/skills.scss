@@ -25,11 +25,23 @@ header{
   justify-content: space-between;
 }
 .header-right{
-  width:100px;
+  width:200px;
   height:80px;
   // border:1px solid black;
   font-size:20px;
   line-height:60px;
+  display:flex;
+  justify-content: space-around;
+}
+.image-space{
+  width:100px;
+  height:80px;
+  // border:1px solid black;
+}
+.image{
+  width:70px;
+  height:70px;
+  margin-left:20px;
 }
 .header-left{
   width:250px;
@@ -101,9 +113,57 @@ header{
 .upper-content:hover{
   opacity:0.7;
 }
+.top-btn{
+  text-decoration: none;
+}
 .contents{
+  // border:1px solid black;
+  width:600px;
+  height:400px;
+  margin:10px auto 0;
+  text-align:center;
+}
+.problem{
   border:1px solid black;
+  margin:10px 0 20px;
+  height:300px;
+  line-height:300px;
+  font-size:40px;
+  border-radius:100px;
+}
+.answer-btn{
+  // border:1px solid black;
+  margin:0 auto 10px;
+  height:60px;
+  line-height:60px;
+  font-size:20px;
+  width:300px;
+  background:rgb(0, 255, 0);
+  border-radius:4px;
+}
+.answer-btn:hover{
+  opacity:0.7;
 }
 .under-contents{
+  // border:1px solid black;
+  display:flex;
+  justify-content: space-around;
+  height:80px;
+  width:600px;
+  margin:10px auto 0;
+}
+#answer{
   border:1px solid black;
+  height:80px;
+  line-height:80px;
+  text-align:center;
+  width:200px;
+  font-size:20px;
+  border-radius:10px;
+  background:rgb(255,0,0)
+}
+#prev,#next{
+  height:60px;
+  width:80px;
+  margin:10px 0 10px; 
 }
