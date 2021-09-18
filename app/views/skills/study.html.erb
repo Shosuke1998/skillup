@@ -6,15 +6,28 @@
   <div class="problem">
     <p>study</p>  
   </div>
-  <div class="answer-btn">
+  <div class="answer-btn"  id ="answer-btn">
     答えを見る
   </div>
 </div>
 
 <div class="under-contents">
   <button id ="prev">前へ</button>
-  <div id="answer">
+  <div id="answer" class="hidden">
     勉強する
   </div>
   <button id ="next">次へ</button>
 </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#answer-btn').click(function(){
+      if($('#answer').hasClass('hidden')){
+        // $('#answer').fadeOut();
+        $('#answer').removeClass('hidden')
+      } else {
+        // $('#answer').fadeIn();
+        $('#answer').addClass('hidden')
+      }
+    })
+  });
+</script>
