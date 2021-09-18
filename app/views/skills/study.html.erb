@@ -18,3 +18,16 @@
   </div>
   <button id ="next">次へ</button>
 </div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#answer-btn').click(function(){
+      if($('#answer').hasClass('hidden')){
+        // $('#answer').fadeOut();
+        $('#answer').removeClass('hidden')
+      } else {
+        // $('#answer').fadeIn();
+        $('#answer').addClass('hidden')
+      }
+    })
+  });
+</script>
