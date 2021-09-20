@@ -1,0 +1,31 @@
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
+<div class="test-text">
+  第<span id="testNum"></span>問
+</div>
+<div id="text-area">
+  <div id="question-text">次の単語の意味の場所を押してください</div>
+  <div class="image-text">
+    <div class="image-space">
+      <%= image_tag("animal_study_inu.png",class:"image") %>
+    </div>
+    <div id ="question"></div>
+    <div class="image-space">
+      <%= image_tag("large_U-neko1.jpeg",class:"image") %>
+    </div>
+  </div>
+  <div class="choices-area">
+    <ul id ="choices">
+      <%# <li class="choice">選択肢1</li>
+      <li class="choice">選択肢2</li>
+      <li class="choice">選択肢3</li>
+      <li class="choice">選択肢4</li> %>
+      </ul>
+  </div>
+  <div id ="btn">次へ</div>
+  <div id="form" class="hidden">
+    <p id ="score-area"></p>
+    <%= link_to 'もう一度行う',test_skills_path %>
+  </div>
+</div>
