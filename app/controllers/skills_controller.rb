@@ -4,4 +4,7 @@ class SkillsController < ApplicationController
 
   def study
   end
+
+  def test
+  end
 end
