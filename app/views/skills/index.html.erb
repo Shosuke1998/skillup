@@ -5,7 +5,7 @@
         <%= link_to('ログアウト',destroy_user_session_path,class:"btn",method: :delete) %>
       </div>
       <div class="mypage-btn">
-        <%= link_to('マイページにいく',"#",class:"btn") %>
+        <%= link_to("#{current_user.name}のページへ","#",class:"btn") %>
       </div>
     <% else %>
       <div class="login-btn">

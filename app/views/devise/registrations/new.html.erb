@@ -27,6 +27,11 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"input-default" %>
   </div>
 
+  <div class="field">
+    <%= f.label :得点（0と記入） %><br />
+    <%= f.text_field :pre_score, autofocus: true,class:"input-default" %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up",class:"submit-btn" %>
   </div>
