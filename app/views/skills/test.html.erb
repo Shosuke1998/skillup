@@ -24,8 +24,13 @@
       </ul>
   </div>
   <div id ="btn">次へ</div>
-  <div id="form" class="hidden">
-    <p id ="score-area"></p>
-    <%= link_to 'もう一度行う',test_skills_path %>
+  <div id="form" class="hidden" >
+    <%= form_with(url: skill_path(current_user.id),local: true,class:"score-form",method: :put) do |f| %>
+      <%# <%= f.label :メールアドレス<br />  %>
+      <div id = "score-area"></div>
+      <%= f.text_field :pre_score, autofocus: true,class:"input-default" %>
+      <%= f.submit "得点を記録する",class:"score-btn" %>
+      <% end %> 
+    <%= link_to 'もう一度行う',test_skills_path,class:"once-btn" %> 
   </div>
 </div>
