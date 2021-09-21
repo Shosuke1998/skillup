@@ -56,6 +56,7 @@ window.addEventListener('load', function(){
 
   
   function setTest(){
+    // timer();
     isAnswered = false;
     testNum.innerHTML = count + 1;
     question.innerHTML = testSet[count].q;
@@ -96,11 +97,16 @@ window.addEventListener('load', function(){
     
   });
 
-  scoreBtn.addEventListener('click',() => {
-    if(preScore === nil){
-      alert("あ");
+  function timer(){
+    let cnt = 5;
+    console.log(cnt)
+    const timeoutId = setTimeout(timer,1000);
+    cnt--;
+    if(cnt === 0){
+      clearTimeout(timeoutId);
     }
-  })
+  }
+  
 
 
 })
