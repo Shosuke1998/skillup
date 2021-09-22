@@ -1,16 +1,22 @@
 <div class="upper-content">
   <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
 </div>
-<div class="user-name">
-  <%= @user.name %>さんのページ
-</div>
 <div class="grade">
   <h1>現在の<%= @user.name %>の成績</h1>
 </div>
 <div class="grade-lists">
   <ul>
     <li class="grade-list">
-
+      pre,per,pro,purの得点:<%= @user.pre_score %>点
+    </li>
+    <li class="grade-list">
+      com-,con-,co-の得点:100点
+    </li>
+    <li class="grade-list">
+      com-,con-,co-の得点:100点
+    </li>
+    <li class="grade-list">
+      com-,con-,co-の得点:100点
     </li>
   </ul>
 </div>
