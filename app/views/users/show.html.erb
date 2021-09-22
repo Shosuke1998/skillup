@@ -1,1 +1,16 @@
-<%= image_tag("study.png",class:"study-image") %>
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
+<div class="user-name">
+  <%= @user.name %>さんのページ
+</div>
+<div class="grade">
+  <h1>現在の<%= @user.name %>の成績</h1>
+</div>
+<div class="grade-lists">
+  <ul>
+    <li class="grade-list">
+
+    </li>
+  </ul>
+</div>
