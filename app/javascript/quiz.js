@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+window.addEventListener('load',function(){
   const prev = document.getElementById("prev")
   const next = document.getElementById("next")
   const problem = document.getElementById("problem-text");

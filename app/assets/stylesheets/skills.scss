@@ -6,7 +6,7 @@ body {
   color: #333;
   margin: 0 auto;
   font-family: monospace;
-  background:#FFFFCC;
+  // background:#FFFFCC;
 }
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
@@ -87,6 +87,12 @@ header{
   border:1px solid black;
   width:400px;
   margin:10px auto 0;
+}
+.study-image{
+  width:100%;
+  height:350px;
+  border:1px solid black;
+  margin-top:20px;
 }
 .lists{
   // border:1px solid black;
@@ -196,7 +202,7 @@ header{
 }
 #text-area{
   // border:1px solid red;
-  height:400px;
+  height:500px;
   position:relative;
 }
 #question-text{
@@ -255,6 +261,14 @@ header{
   height:40px;
   border-radius:4px;
 }
+#time-record {
+  width:350px;
+  height:70px;
+  border:1px solid red;
+  text-align:center;
+  margin:10px auto 0;
+
+}
 #form.hidden{
   transform:translateY(-500px);
 }
@@ -298,6 +312,15 @@ header{
   background:rgb(0, 255, 0);
   cursor:pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+#timer-area {
+  border:1px solid red;
+  width:300px;
+  height:40px;
+  text-align:center;
+  margin:10px auto 30px;
+  line-height:40px;
+  font-size:20px;
 }
 .sign-up-in{
   // border:1px solid black;
@@ -353,3 +376,4 @@ header{
 #error_explanation ul li{
   list-style:none;
 }
+
