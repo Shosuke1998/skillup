@@ -31,7 +31,9 @@
       <%= f.text_field :pre_score, autofocus: true,class:"input-default",id:"pre-score" %>
       <%= f.submit "得点を記録する",class:"score-btn" %>
       <% end %> 
+    <div id="time-record"></div>  
     <%= link_to 'もう一度行う',test_skills_path,class:"once-btn" %> 
   </div>
 </div>
+<div id ="timer-area">経過時間：<span id="timer">00:00</span></div>
 

@@ -261,6 +261,14 @@ header{
   height:40px;
   border-radius:4px;
 }
+#time-record {
+  width:350px;
+  height:70px;
+  border:1px solid red;
+  text-align:center;
+  margin:10px auto 0;
+
+}
 #form.hidden{
   transform:translateY(-500px);
 }
@@ -304,6 +312,15 @@ header{
   background:rgb(0, 255, 0);
   cursor:pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+#timer-area {
+  border:1px solid red;
+  width:300px;
+  height:40px;
+  text-align:center;
+  margin:10px auto 30px;
+  line-height:40px;
+  font-size:20px;
 }
 .sign-up-in{
   // border:1px solid black;
