@@ -27,9 +27,12 @@
 <div class="title">
   <h1>英単語学習ページ</h1>
 </div>
-<%= image_tag("study.png",class:"study-image") %>
+<div><%= image_tag("study.png",class:"study-image") %></div>
+
+
 <div class="lists">
   <ul>
+    <div class="item-name">各項目</div>
     <li class="list">
       <%= link_to('英単語を暗記する(接頭辞pre-,per-,pro-,pur-)',study_skills_path,class:"btn") %>
     </li>
