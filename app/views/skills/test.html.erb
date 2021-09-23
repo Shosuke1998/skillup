@@ -29,7 +29,7 @@
     <%= form_with(url: skill_path(current_user.id),local: true,class:"score-form",method: :put) do |f| %>
       <%# <%= f.label :メールアドレス<br />  %>
       <div id = "score-area"></div>
-      <%= f.text_field :pre_score, autofocus: true,class:"input-default",id:"pre-score" %>
+      <%= f.number_field :pre_score, autofocus: true,class:"input-default",id:"pre-score" %>
       <%= f.submit "得点を記録する",class:"score-btn" %>
       <% end %> 
     <div id="time-record-area">タイム:<span id="time-record">00:00</span></div>  

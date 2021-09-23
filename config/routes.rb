@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     collection do
       get 'study'
       get 'test'
+      get 'test2'
+      get 'rank'
     end
   end
   resources :users, only: :show
