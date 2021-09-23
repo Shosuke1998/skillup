@@ -23,6 +23,10 @@ class SkillsController < ApplicationController
     end
   end
 
+  def rank
+    @users = User.all.order(pre_score: :DESC).limit(3)
+  end
+
   
 
   private
