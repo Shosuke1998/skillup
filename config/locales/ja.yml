@@ -3,4 +3,5 @@ ja:
     attributes:
       user:
         name: 名前
+        pre_score: 得点
       

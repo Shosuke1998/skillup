@@ -1,4 +1,5 @@
 class SkillsController < ApplicationController
+  before_action :authenticate_user!, only: [:test, :test2]
   def index
   end
 
@@ -9,13 +10,29 @@ class SkillsController < ApplicationController
     @user = User.new
   end
 
+  def test2
+  end
+
   def update
     @user = User.find(params[:id])
     @user.update(pre_score_params)
+    @user.update(input_words_params)
+    unless @user.valid?
+      redirect_to root_path
+      flash[:notice] = "得点が保存できませんでした"
+    end
+  end
+
+  def rank
+    @user = User.
   end
 
   private
   def pre_score_params
     params.permit(:pre_score)
+  end
+   
+  def input_words_params
+    params.permit(:input_words)
   end
 end

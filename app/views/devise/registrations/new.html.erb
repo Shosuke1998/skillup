@@ -16,10 +16,10 @@
   </div>
 
   <div class="field">
-    <%= f.label :パスワード %>
-    <%# <% if @minimum_password_length %>
-    <%# <em>(<%= @minimum_password_length characters minimum)</em> %>
-    <%# <% end %><br />      <%= f.password_field :password, autocomplete: "new-password",class:"input-default" %>
+    <%= f.label :パスワード（６文字以上） %>
+    <%# <% if @minimum_password_length %> 
+    <%# <em>(<%= @minimum_password_length characters minimum%></em> 
+    <%# <%end%><br />      <%= f.password_field :password, autocomplete: "new-password",class:"input-default" %> 
   </div>
 
   <div class="field">
@@ -29,7 +29,12 @@
 
   <div class="field">
     <%= f.label :得点（0と記入） %><br />
-    <%= f.text_field :pre_score, autofocus: true,class:"input-default" %>
+    <%= f.number_field :pre_score, autofocus: true,class:"input-default", :value =>0 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :得点（0と記入） %><br />
+    <%= f.number_field :input_words, autofocus: true,class:"input-default", :value =>0 %>
   </div>
 
   <div class="actions">
