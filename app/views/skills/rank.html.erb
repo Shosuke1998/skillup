@@ -1,46 +1,50 @@
-<div class="rank-title">ランキング</div>
-<div class="ranking">
-  <div class="one-rank">
-    <div class=ranking-name>接頭辞pre-,per-,pro-,pur-</div>
-    <div class="rank-space">
-      <%= image_tag("gold_medal.png",class:"gold-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
-    </div>
-    <div class="rank-space">
-      <%= image_tag("silver-medal.png",class:"silver-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
-    </div>
-    <div class="rank-space">
-      <%= image_tag("blonze-medal.png",class:"blonze-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
-    </div>
+<div class="rank-title">
+  <h1>ランキング</h1>
+</div>
+<div class="one-rank">
+  <div class="exp-rank">
+    <p>接頭辞pro,per,pro,pur</p>
   </div>
-  <div class="one-rank">
-    <div class=ranking-name>接頭辞pre-,per-,pro-,pur-</div>
-    <div class="rank-space">
-      <%= image_tag("gold_medal.png",class:"gold-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
+  <div class="rank-area">
+    <div class="image-area">
+      <%= image_tag("gold_medal.png",class:"medal-image") %>
+      <%= image_tag("silver-medal.png",class:"medal-image") %>
+      <%= image_tag("blonze-medal.png",class:"medal-image") %>
     </div>
-    <div class="rank-space">
-      <%= image_tag("silver-medal.png",class:"silver-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
-    </div>
-    <div class="rank-space">
-      <%= image_tag("blonze-medal.png",class:"blonze-medal") %>
-      <div class="name-score">
-        ssさん:100点
-      </div>
+    <div class="main-ranking">
+      <% last_score =0 %>
+      <% j = 1%>
+      <% @users.each.with_index(1) do |user,index| %>
+        <% if index == 1 %>
+          <% last_score = user.pre_score%>
+        <% end %>
+        <% if user.pre_score !=  last_score %>
+          <% j = index %>
+          <div class="a-rank"><%= j %>位<%= user.name %>さん：<%= user.pre_score %>点</div>
+        <% else %>  
+          <% last_score = user.pre_score %>
+          <div class="a-rank"><%= j %>位<%= user.name %>さん：<%= user.pre_score %>点</div>
+        <% end %>  
+      <% end %>
     </div>
   </div>
 </div>
+<div class="one-rank">
+  <div class="exp-rank">
+    <p>接頭辞pro,per,pro,pur</p>
+  </div>
+  <div class="rank-area">
+    <div class="image-area">
+      <%= image_tag("gold_medal.png",class:"medal-image") %>
+      <%= image_tag("silver-medal.png",class:"medal-image") %>
+      <%= image_tag("blonze-medal.png",class:"medal-image") %>
+    </div>
+    <div class="main-ranking">
+      <div class="a-rank">１位ssさん：44点</div>
+      <div class="a-rank">１位ssさん：44点</div>
+      <div class="a-rank">１位ssさん：44点</div>
+    </div>
+  </div>
+</div>
+
 
