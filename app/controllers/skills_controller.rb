@@ -23,9 +23,7 @@ class SkillsController < ApplicationController
     end
   end
 
-  def rank
-    @user = User.
-  end
+  
 
   private
   def pre_score_params
