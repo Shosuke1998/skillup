@@ -24,6 +24,7 @@ class SkillsController < ApplicationController
   end
 
   def rank
+    @user = User.
   end
 
   private
