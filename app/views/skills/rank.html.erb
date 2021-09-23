@@ -20,7 +20,9 @@
         <% end %>
         <% if user.pre_score !=  last_score %>
           <% j = index %>
-          <div class="a-rank"><%= j %>位<%= user.name %>さん：<%= user.pre_score %>点</div>
+          <div class="a-rank"><%= j %>位<%= user.name %>さん：<%= user.pre_score %>点
+          <% last_score = user.pre_score%>
+          </div>
         <% else %>  
           <% last_score = user.pre_score %>
           <div class="a-rank"><%= j %>位<%= user.name %>さん：<%= user.pre_score %>点</div>
