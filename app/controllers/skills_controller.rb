@@ -28,6 +28,9 @@ class SkillsController < ApplicationController
     @verb_users = User.all.order(input_words: :DESC).limit(3)
   end
 
+  def preposition
+  end
+
   
 
   private

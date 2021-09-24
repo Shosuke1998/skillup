@@ -604,14 +604,15 @@ footer{
 }
 .check-lists{
   width:600px;
-  height:800px;
+  height:600px;
   border:1px solid red;
   margin:10px auto 0;
 }
 .check-box-area{
   width:500px;
   height:100px;
-  border:1px solid pink;
+  line-height:100px;
+  border-bottom:2px solid pink;
   margin:10px auto 0;
   list-style:none;
   display:flex;
@@ -622,14 +623,16 @@ footer{
   width:350px;
   height:70px;
   // border:1px solid green;
-  line-height:70px;
+  // line-height:70px;
   font-size:30px;
 }
-
+.checkbox{
+  font-size:20px;
+}
 .master{
   width:120px;
   height:70px;
-  border:1px solid silver;
+  border-bottom:2px solid silver;
   line-height:70px;
   font-size:30px;
   color:red;

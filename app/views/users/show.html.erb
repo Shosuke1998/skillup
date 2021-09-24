@@ -4,13 +4,29 @@
 <div class="grade">
   <h1>現在の<%= @user.name %>の成績</h1>
 </div>
-<h1 class="show-title">満点を取ったらチェックを入れよう！</h1>
+<h1 class="show-title">頑張って満点を取ろう！</h1>
 <ul class="check-lists">
   <li class="check-box-area">
     <div class="check-list">
-      <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
+      <p class="checkbox">pre-,per-,pro-,pur-編:<%= @user.pre_score%>点</p>
     </div>
     <% if @user.pre_score == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">基本動詞編:<%= @user.input_words%>点</p>
+    </div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">基本動詞編</p>
+    </div>
+    <% if @user.input_words == 100 %>
       <div class="master">master!</div>
     <% end %>  
   </li>
@@ -24,31 +40,16 @@
   </li>
   <li class="check-box-area">
     <div class="check-list">
-      <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
+      <p class="checkbox">接頭辞pro,per,pro,pur</p>
     </div>
-    <div class="master hidden">master!</div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
   </li>
-  <li class="check-box-area">
-    <div class="check-list">
-      <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
-    </div>
-    <div class="master hidden">master!</div>
-  </li>
-  <li class="check-box-area">
-    <div class="check-list">
-      <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
-    </div>
-    <div class="master hidden">master!</div>
-  </li>
-  <li class="check-box-area">
-    <div class="check-list">
-      <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
-    </div>
-    <div class="master hidden">master!</div>
-  </li>
+  
 </ul>
 <div class="complete_result">
-  <p id="complete-number"></p>
+  <p id="complete-number">現在のクリア数は3/6です</p>
   <p id="comment"></p>
 </div>
 <script type="text/javascript">
