@@ -33,7 +33,7 @@
 </div>
 <div class="one-rank">
   <div class="exp-rank">
-    <p>接頭辞pro,per,pro,pur</p>
+    <p>基本動詞編</p>
   </div>
   <div class="rank-area">
     <div class="image-area">
@@ -42,9 +42,22 @@
       <%= image_tag("blonze-medal.png",class:"medal-image") %>
     </div>
     <div class="main-ranking">
-      <div class="a-rank">１位ssさん：44点</div>
-      <div class="a-rank">１位ssさん：44点</div>
-      <div class="a-rank">１位ssさん：44点</div>
+      <% last_verb_score =0 %>
+      <% x = 1%>
+      <% @verb_users.each.with_index(1) do |verb_user,index| %>
+        <% if index == 1 %>
+          <% last_verb_words = verb_user.input_words%>
+        <% end %>
+        <% if verb_user.input_words !=  last_verb_score %>
+          <% x = index %>
+          <div class="a-rank"><%= x %>位<%= verb_user.name %>さん：<%= verb_user.input_words %>点
+          <% last_verb_score = verb_user.input_words%>
+          </div>
+        <% else %>  
+          <% last_verb_score = verb_user.input_words %>
+          <div class="a-rank"><%= x %>位<%= verb_user.name %>さん：<%= verb_user.input_words %>点</div>
+        <% end %>  
+      <% end %>
     </div>
   </div>
 </div>

@@ -25,6 +25,7 @@ class SkillsController < ApplicationController
 
   def rank
     @users = User.all.order(pre_score: :DESC).limit(3)
+    @verb_users = User.all.order(input_words: :DESC).limit(3)
   end
 
   
