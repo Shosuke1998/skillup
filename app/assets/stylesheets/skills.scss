@@ -189,7 +189,7 @@ header{
   // border:1px solid black;
   display:flex;
   justify-content: space-around;
-  height:80px;
+  height:200px;
   width:600px;
   margin:10px auto 0;
 }
@@ -411,24 +411,8 @@ header{
   margin:20px auto 0;
   padding-bottom:20px;
 }
-.grade-lists{
-  // border:1px solid red;
-  width:700px;
-  height:600px;
-  text-align:center;
-  margin:20px auto 0;
 
-}
-.grade-list{
-  border-bottom:2px solid black;
-  list-style:none;
-  width:600px;
-  height:100px;
-  line-height:100px;
-  margin:20px auto 0;
-  text-align:center;
-  font-size:30px;
-}
+
 
 #answer-modal{
   border:2px solid black;
@@ -558,5 +542,122 @@ header{
   height:50px;
 
 }
-
+.sign-up-btn,.forget-password{
+  width:100px;
+  height:100px;
+  // border:1px solid red;
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  line-height:100px;
+  font-size:20px;
+  text-decoration:none;
+}
+.forget-password{
+  width:300px;
+  height:100px;
+  // border:1px solid black;
+  line-height:100px;
+  text-align:center;
+  margin:0 auto;
+  font-size:20px;
+  display:block;
+}
+footer{
+  width:100%;
+  height:100px;
+  background:silver;
+}
+.footer-image{
+  width:100px;
+  height:70px;
+}
+.footer-title{
+  width:100px;
+  height:50px;
+  // border:1px solid black;
+  font-size:20px;
+  line-height:50px;
+  text-align:center;
+}
+.footer-area{
+  width:200px;
+  height:70px;
+  // border:1px solid pink;
+  display:flex;
+  margin:0 auto ;
+  align-items:center;
+  padding-top:10px;
+}
+.nill-class{
+  width:100%;
+  height:500px;
+  // border:1px solid black;
+}
+.show-title{
+  width:600px;
+  height:50px;
+  border:1px solid orangered;
+  margin:10px auto 0;
+  text-align:center;
+  line-height:50px;
+}
+.check-lists{
+  width:600px;
+  height:600px;
+  border:1px solid red;
+  margin:10px auto 0;
+}
+.check-box-area{
+  width:500px;
+  height:100px;
+  line-height:100px;
+  border-bottom:2px solid pink;
+  margin:10px auto 0;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.check-list{
+  width:350px;
+  height:70px;
+  // border:1px solid green;
+  // line-height:70px;
+  font-size:30px;
+}
+.checkbox{
+  font-size:20px;
+}
+.master{
+  width:120px;
+  height:70px;
+  border-bottom:2px solid silver;
+  line-height:70px;
+  font-size:30px;
+  color:red;
+}
+.complete_result{
+  width:400px;
+  height:200px;
+  margin:10px auto 20px;
+  text-align:center;
+  border:1px solid red;
+  line-height:100px;
+  font-size:20px;
+}
+#complete-number{
+  width:300px;
+  height:50px;
+  border:1px solid pink;
+  margin:10px auto 0;
+  line-height:50px;
+}
+#comment{
+  width:300px;
+  height:50px;
+  border:1px solid green;
+  margin:10px auto 0;
+  line-height:50px;
+}
 

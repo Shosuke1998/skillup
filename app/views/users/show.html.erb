@@ -4,19 +4,57 @@
 <div class="grade">
   <h1>現在の<%= @user.name %>の成績</h1>
 </div>
-<div class="grade-lists">
-  <ul>
-    <li class="grade-list">
-      pre,per,pro,purの得点:<%= @user.pre_score %>点
-    </li>
-    <li class="grade-list">
-      com-,con-,co-の得点:<%= @user.input_words %>点
-    </li>
-    <li class="grade-list">
-      com-,con-,co-の得点:100点
-    </li>
-    <li class="grade-list">
-      com-,con-,co-の得点:100点
-    </li>
-  </ul>
+<h1 class="show-title">頑張って満点を取ろう！</h1>
+<ul class="check-lists">
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">pre-,per-,pro-,pur-編:<%= @user.pre_score%>点</p>
+    </div>
+    <% if @user.pre_score == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">基本動詞編:<%= @user.input_words%>点</p>
+    </div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">基本動詞編</p>
+    </div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">接頭辞pro,per,pro,pur</p>
+    </div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">接頭辞pro,per,pro,pur</p>
+    </div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  
+</ul>
+<div class="complete_result">
+  <p id="complete-number">現在のクリア数は3/6です</p>
+  <p id="comment"></p>
 </div>
+<script type="text/javascript">
+  
+    
+    
+  });
+</script>
