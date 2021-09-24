@@ -10,13 +10,17 @@
     <div class="check-list">
       <label><input type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
     </div>
-    <div class="master hidden">master!</div>
+    <% if @user.pre_score == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
   </li>
   <li class="check-box-area">
     <div class="check-list">
-      <label><input  type = "checkbox" class="checkbox">接頭辞pro,per,pro,pur</label>
+      <p class="checkbox">接頭辞pro,per,pro,pur</p>
     </div>
-    <div class="master hidden">master!</div>
+    <% if @user.input_words == 100 %>
+      <div class="master">master!</div>
+    <% end %>  
   </li>
   <li class="check-box-area">
     <div class="check-list">
@@ -43,21 +47,13 @@
     <div class="master hidden">master!</div>
   </li>
 </ul>
+<div class="complete_result">
+  <p id="complete-number"></p>
+  <p id="comment"></p>
+</div>
 <script type="text/javascript">
-  $(document).ready(function() {
-    $('.checkbox').change(function() {
-      var $this = $(this).parent().parent().next()
-      let conplete_score = 0;
-      if($this.hasClass('hidden')){
-        $this.removeClass("hidden");
-        conplete_score++;
-        console.log(conplete_score)
-      } else {
-        $this.addClass("hidden");
-        conplete_score--;
-        console.log(conplete_score)
-      }
-    })
+  
+    
     
   });
 </script>
