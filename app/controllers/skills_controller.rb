@@ -1,5 +1,5 @@
 class SkillsController < ApplicationController
-  before_action :authenticate_user!, only: [:test, :test2]
+  before_action :authenticate_user!, only: [:test, :test2, :preposition]
   def index
   end
 
@@ -17,6 +17,7 @@ class SkillsController < ApplicationController
     @user = User.find(params[:id])
     @user.update(pre_score_params)
     @user.update(input_words_params)
+    @user.update(preposition_score_params)
     unless @user.valid?
       redirect_to root_path
       flash[:notice] = "得点が保存できませんでした"
@@ -26,11 +27,17 @@ class SkillsController < ApplicationController
   def rank
     @users = User.all.order(pre_score: :DESC).limit(3)
     @verb_users = User.all.order(input_words: :DESC).limit(3)
+    @preposition_users = User.all.order(preposition_score: :DESC).limit(3)
   end
 
-  def preposition
-  end
+  # def preposition
+  # end
 
+  # def exp_preposition
+  # end
+
+  def preposition_img
+  end
   
 
   private
@@ -40,5 +47,9 @@ class SkillsController < ApplicationController
    
   def input_words_params
     params.permit(:input_words)
+  end
+
+  def preposition_score_params
+    params.permit(:preposition_score)
   end
 end

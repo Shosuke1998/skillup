@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2021_09_20_012926) do
     t.string "encrypted_password", default: "", null: false
     t.integer "pre_score"
     t.integer "input_words"
+    t.integer "preposition_score"
     t.string "name", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

@@ -1,0 +1,24 @@
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
+<div class="upper-explain-btn">
+  <button id="prev-preposition">前へ</button>
+  <div id ="insert-preposition-area">onを見て思い浮かべること</div>
+  <button id="next-preposition">次へ</button>
+</div>
+<div id="exp-preposition" class="hidden">
+</div>
+<div id="change-btn">説明を見る</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#change-btn').click(function(){
+      if($('#exp-preposition').hasClass('hidden')){
+        $('#exp-preposition').removeClass('hidden')
+        $('#change-btn').text('説明を隠す')
+      } else {
+        $('#exp-preposition').addClass('hidden')
+        $('#change-btn').text('説明を見る')
+      }
+    })
+  });
+</script>
