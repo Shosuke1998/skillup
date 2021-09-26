@@ -50,6 +50,6 @@ class SkillsController < ApplicationController
   end
 
   def preposition_score_params
-    params.require(:user).permit(:preposition_score)
+    params.permit(:preposition_score)
   end
 end
