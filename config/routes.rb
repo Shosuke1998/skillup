@@ -9,6 +9,8 @@ Rails.application.routes.draw do
       get 'test2'
       get 'rank'
       get 'preposition'
+      get 'exp_preposition'
+      get 'preposition_img'
     end
   end
   resources :users, only: :show

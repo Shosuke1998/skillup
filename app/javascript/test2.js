@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
   button.addEventListener('click',() => {
     console.log("A")
     let ans = word.value.toLowerCase();
-    let message;;
+    let message;
     if(ans === words[wordIndex][1]){
       correct++;
       message = '正解'

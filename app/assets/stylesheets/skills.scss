@@ -114,10 +114,10 @@ header{
   font-size:18px;
 }
 .lists{
-  // border:1px solid black;
+  border:1px solid black;
   width:600px;
   margin:20px auto 0;
-  height:700px;
+  height:800px;
   line-height:150px;
   font-size:20px;
   font-weight:bold;
@@ -277,7 +277,7 @@ header{
 .score-btn{
   display:block;
   border:1px solid black;
-  margin:10px auto 0;
+  margin:10px auto ;
   text-align:center;
   width:150px;
   height:40px;
@@ -660,4 +660,107 @@ footer{
   margin:10px auto 0;
   line-height:50px;
 }
+.preposition-area{
+  width:600px;
+  height:300px;
+  text-align:center;
+  margin:10px auto 0;
+  // border:1px solid pink;
+  line-height:80px;
+  font-size:20px;
+}
+#ask-preposition{
+  width:600px;
+  height:40px;
+  border-bottom:1px solid silver;
+  text-align:center;
+  margin:10px auto 0;
+  line-height:40px;
 
+}
+#preposition{
+  width:500px;
+  height:40px;
+  border:1px solid silver;
+  text-align:center;
+  margin:40px auto 0;
+  line-height:40px;
+  display:block;
+  font-size:20px;
+}
+#preposition-button{
+  width:500px;
+  height:40px;
+  border:1px solid silver;
+  text-align:center;
+  margin:10px auto 0;
+  line-height:40px;
+  display:block;
+}
+.preposition-score-btn{
+  display:block;
+  border:1px solid black;
+  margin:10px auto 0;
+  text-align:center;
+  width:150px;
+  height:40px;
+  border-radius:4px;
+}
+#preposition-answer-modal{
+  border:2px solid black;
+  transition:0.4s;
+  width:700px;
+  height:100px;
+  text-align:center;
+  margin:10px auto 0;
+  line-height:100px;
+}
+#preposition-answer{
+  width:700px;
+  height:100px;
+  text-align:center;
+  margin:0 auto 10px;
+  line-height:100px;
+  font-size:15px;
+}
+.upper-explain-btn{
+  border:1px solid red;
+  width:600px;
+  height:50px;
+  text-align:center;
+  margin:10px auto;
+  display:flex;
+  justify-content: space-between;
+  align-items:center
+}
+#prev-preposition,#next-preposition{
+  display:block;
+  height:30px;
+  width:50px;
+}
+
+#insert-preposition-area{
+  width:300px;
+  height:40px;
+  border:1px solid pink;
+  text-align:center;
+  line-height:40px;
+  font-size:20px;
+}
+#exp-preposition{
+  width:600px;
+  height:400px;
+  border:2px solid black;
+  text-align:center;
+  margin:10px auto 0;
+  font-size:30px;
+}
+#change-btn{
+  width:100px;
+  height:50px;
+  border:1px solid blue;
+  text-align:center;
+  margin:10px auto 10px;
+  line-height:50px;
+  font-size:20px;
+}

@@ -1,3 +1,6 @@
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
 <div class="rank-title">
   <h1>ランキング</h1>
 </div>
@@ -56,6 +59,36 @@
         <% else %>  
           <% last_verb_score = verb_user.input_words %>
           <div class="a-rank"><%= x %>位<%= verb_user.name %>さん：<%= verb_user.input_words %>点</div>
+        <% end %>  
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="one-rank">
+  <div class="exp-rank">
+    <p>前置詞編</p>
+  </div>
+  <div class="rank-area">
+    <div class="image-area">
+      <%= image_tag("gold_medal.png",class:"medal-image") %>
+      <%= image_tag("silver-medal.png",class:"medal-image") %>
+      <%= image_tag("blonze-medal.png",class:"medal-image") %>
+    </div>
+    <div class="main-ranking">
+      <% last_preposition_score =0 %>
+      <% y = 1%>
+      <% @preposition_users.each.with_index(1) do |preposition_user,index| %>
+        <% if index == 1 %>
+          <% last_preposition_score = preposition_user.preposition_score%>
+        <% end %>
+        <% if preposition_user.preposition_score !=  last_preposition_score %>
+          <% y = index %>
+          <div class="a-rank"><%= y %>位<%= preposition_user.name %>さん：<%= preposition_user.preposition_score %>点
+          <% last_preposition_score = preposition_user.preposition_score%>
+          </div>
+        <% else %>  
+          <% last_preposition_score = preposition_user.preposition_score %>
+          <div class="a-rank"><%= y %>位<%= preposition_user.name %>さん：<%= preposition_user.preposition_score %>点</div>
         <% end %>  
       <% end %>
     </div>

@@ -23,8 +23,10 @@
     $('#answer-btn').click(function(){
       if($('#answer').hasClass('hidden')){
         $('#answer').removeClass('hidden')
+        $('#answer-btn').text('答えを隠す')
       } else {
         $('#answer').addClass('hidden')
+        $('#answer-btn').text('答えを見る')
       }
     })
   });
