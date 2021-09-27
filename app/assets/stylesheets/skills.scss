@@ -764,3 +764,24 @@ footer{
   line-height:50px;
   font-size:20px;
 }
+.preposition-image{
+  width:200px;
+  height:200px;
+}
+.preposition-images{
+  border:1px solid red;
+  width:100%;
+  height:800px;
+  margin:10px auto 0;
+}
+.three-prepositions{
+  display:flex;
+  justify-content: space-around;
+  border:2px solid blue;
+  height:300px;
+}
+.one-preposition{
+  width:250px;
+  height:300px;
+  border:1px solid pink;
+}
