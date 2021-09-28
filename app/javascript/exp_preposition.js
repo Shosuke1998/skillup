@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
     if(expPreposition.classList.contains("hidden") === false){
       expPreposition.classList.add("hidden")
     }
-    insertPrepositionArea.innerHTML = prepositionSet[currentPre].p
+    insertPrepositionArea.innerHTML = `${prepositionSet[currentPre].p}で思い浮かぶこと`
     expPreposition.innerHTML = prepositionSet[currentPre].a
   })
 })

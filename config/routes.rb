@@ -11,6 +11,9 @@ Rails.application.routes.draw do
       get 'preposition'
       get 'exp_preposition'
       get 'preposition_img'
+      get 'opposite'
+      get 'test3'
+      get 'opposite_sheet'
     end
   end
   resources :users, only: :show
