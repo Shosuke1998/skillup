@@ -6,7 +6,6 @@ body {
   color: #333;
   margin: 0 auto;
   font-family: monospace;
-  background:#FFFFCC;
 }
 h1,h2,h3,h4,h5,h6,p {
   padding: 10px 0;
@@ -30,11 +29,27 @@ header{
   width:200px;
   height:80px;
   // border:1px solid black;
-  font-size:20px;
-  line-height:60px;
-  display:flex;
-  justify-content: space-around;
 }
+.first-p {
+  letter-spacing:10px;
+  // border:1px solid black;
+  width:200px;
+  height:20px;
+  font-size:30px;
+  font-family:"Kokoro", cursive;
+  text-align:center;
+}
+.second-p{
+  // border:1px solid black;
+  height:10px;
+  text-align:center;
+  font-size:10px;
+  line-height:20px;
+  letter-spacing: 5px;
+  font-family:"Kokoro", cursive;
+  margin-top:5px;
+}
+
 .image-space{
   width:100px;
   height:80px;
@@ -91,55 +106,79 @@ header{
   font-size:18px;
   margin:30px auto 0;
   text-align:center;
-  // background:rgb(224, 255, 255);
+  background:linear-gradient(#132035,#182945);
   border-bottom:1px solid red;
   width:500px;
   height:70px;
   margin:70px auto 0;
+  color:#fcf8ec;
 }
-.study-image{
-  width:100%;
-  height:350px;
-  border:1px solid black;
-  margin-top:50px;
-  margin-bottom:30px;
-}
-.item-name{
-  width:500px;
-  height:100px;
-  line-height:100px;
-  border-bottom:1px solid red;
+.introduce{
+  width:800px;
+  height:300px;
+  // border:1px solid red;
+  margin:10px auto;
   text-align:center;
-  margin:0 auto 30px;
-  font-size:18px;
+}
+.third-text{
+  width:800px;
+}
+.first-text,.second-text{
+  width:600px;
+}
+.text{
+  display:block;
+  // border:1px solid pink;
+  height:40px;
+  margin:10px auto 0;
+  text-align:center;
+  line-height:40px;
+  font-size:14px;
+}
+
+.index{
+  background: linear-gradient(#132035,#182945);
+  font-family: sans-serif;
+  color: #fcf8ec;
+  width:780px;
+  height:50px;
+  margin:0 auto;
+  line-height:50px;
+  padding-left:20px;
+}
+.lists-area{
+  width:800px;
+  height:600px;
+  // border:1px solid red;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
 }
 .lists{
-  border:1px solid black;
-  width:600px;
-  margin:20px auto 0;
-  height:800px;
-  line-height:150px;
-  font-size:20px;
-  font-weight:bold;
+  // border:1px solid pink;
+  width:320px;
+  height:600px;
 }
-.list {
-  list-style: none;
-  // border:1px solid black;
-  height:70px;
-  line-height:70px;
+.list{
   list-style:none;
-  // margin:10px 0 10px;
-  // background:rgb(224, 255, 255);
-  color:white;
-  border-radius:4px;
-  padding-left:20px;
-  text-align:center;
-  color:black;
+  border-bottom:1px solid black;
+  width:250px;
+  height:60px;
+  line-height:60px;
+  background:linear-gradient(#FDFDFD,#F3F3F3);
+  padding-left:15px;
 }
 .list:hover{
   opacity:0.7;
 }
-
+.signal {
+  background:#585858;
+  color:azure;
+}
+.link{
+  color: #132035;
+  text-decoration:none;
+}
 .upper-content{
   border:1px solid black;
   width:300px;
@@ -148,7 +187,7 @@ header{
   margin:10px auto 0;
   font-size:25px;
   line-height:80px;
-  background:rgb(0, 255, 0);
+  background:silver;
   border-radius:4px;
 }
 .upper-content:hover{
@@ -179,7 +218,7 @@ header{
   line-height:60px;
   font-size:20px;
   width:300px;
-  background:rgb(0, 255, 0);
+  background:silver;
   border-radius:4px;
 }
 .answer-btn:hover{
@@ -333,7 +372,7 @@ header{
   text-align:center;
   line-height:40px;
   border-radius:4px;
-  background:rgb(0, 255, 0);
+  background:silver;
   cursor:pointer;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
@@ -563,32 +602,7 @@ header{
   font-size:20px;
   display:block;
 }
-footer{
-  width:100%;
-  height:100px;
-  background:silver;
-}
-.footer-image{
-  width:100px;
-  height:70px;
-}
-.footer-title{
-  width:100px;
-  height:50px;
-  // border:1px solid black;
-  font-size:20px;
-  line-height:50px;
-  text-align:center;
-}
-.footer-area{
-  width:200px;
-  height:70px;
-  // border:1px solid pink;
-  display:flex;
-  margin:0 auto ;
-  align-items:center;
-  padding-top:10px;
-}
+
 .nill-class{
   width:100%;
   height:500px;
@@ -791,7 +805,7 @@ footer{
   height:300px;
   // border:1px solid pink;
 }
-.image-lists-title{
+.image-lists-title,.opposite-lists-title{
   width:600px;
   height:100px;
   border-bottom:3px solid black;
@@ -827,7 +841,7 @@ table{
   border-collapse: collapse;
   border-spacing: 0;
   border:1px solid black;
-  margin:10px auto 0;
+  margin:50px auto 50px;
 }
 
 table th,table td{
@@ -839,4 +853,16 @@ table th,table td{
 
 table tr:nth-child(odd){
   background-color: #eee
+}
+.opposite-footer{
+  position:absolute;
+  bottom:0;
+  border:1px solid red;
+  height:50px;
+  width:100%;
+  background:red;
+  z-index:2;
+}
+.td{
+  width:100px;
 }

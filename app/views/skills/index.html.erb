@@ -18,53 +18,48 @@
     <div class="mypage-btn"></div>
   </div> 
   <div class ="header-right">
-    <div class="image-space">
-      <%= image_tag("watermark.png",class:"image") %>
-    </div>
-    <p>Skillup</p>
+    <p class="first-p">skillup</p>
+    <p class="second-p">英単語学習サイト</p>
   </div>
 </header>
 <% if flash[:notice] %>
   <p class="flash"><%= flash[:notice] %></p>
 <% end %>
-<div class="title">
-  <h1>英単語学習ページ</h1>
+<div class="introduce">
+  <h1>サイト紹介</h1>
+  <span class="first-text text">このサイトでは効率的に英単語を学習することを目標とします。</span>
+  <span class="second-text text">そのために英単語を品詞や、単語の特徴に注目してその種類ごとに学習していきます。</span>
+  <span class="third-text text">以上より単語を覚えることはもちろん、未知の単語にであってもその単語の特徴に注目し推測できるようになる可能性を高めます。</span>
 </div>
-<div><%= image_tag("study.png",class:"study-image") %></div>
-
-
-<div class="lists">
-  <ul>
-    <div class="item-name">
-      各項目    
-    </div>
-    <li class="list">
-      <%= link_to('ランキングを見る',rank_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：英単語を暗記する(接頭辞pre-,per-,pro-,pur-)',study_skills_path,class:"btn") %>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：英単語テストをする(接頭辞pre-,per-,pro-,pur-)',test_skills_path,class:"btn") %>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：基本動詞',test2_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：前置詞',preposition_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('前置詞解説編',exp_preposition_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('前置詞イメージ編',preposition_img_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：類義語',test2_skills_path,class:"btn")%>
-    </li>
-    <li class="list">
-      <%= link_to('初級編：反対語',opposite_skills_path,class:"btn")%>
-    </li>
+<h2 class="index">各項目</h2>
+<div class="lists-area">
+  <ul class="lists">
+    <li class="list signal">暗記編</li>
+    <li class="list"><%= link_to("接頭辞(pre,proなど)",study_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("前置詞",exp_preposition_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("反対語暗記シート",opposite_sheet_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("類義語暗記シート",opposite_sheet_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("前置詞",exp_preposition_skills_path,class:"link") %></li>
+  </ul>
+  <ul class="lists">
+    <li class="list signal">テスト編</li>
+    <li class="list"><%= link_to("接頭辞(pre,proなど)",test_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("前置詞",preposition_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("基本動詞",test2_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("基本動詞",test2_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("基本動詞",test2_skills_path,class:"link") %></li>
+  </ul>
+  <ul class="lists">
+    <li class="list signal">資料</li>
+    <li class="list"><%= link_to("前置詞イメージ",preposition_img_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("反対語",opposite_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("類義語",preposition_img_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("意外な意味を持つ英単語",preposition_img_skills_path,class:"link") %></li>
+    <li class="list"><%= link_to("ランキング",rank_skills_path,class:"link") %></li>
   </ul>
 </div>
+
+
+
+
 
