@@ -18,6 +18,7 @@ class SkillsController < ApplicationController
     @user.update(pre_score_params)
     @user.update(input_words_params)
     @user.update(preposition_score_params)
+    @user.update(unexp_score_params)
     unless @user.valid?
       redirect_to root_path
       flash[:notice] = "得点が保存できませんでした"
@@ -51,5 +52,9 @@ class SkillsController < ApplicationController
 
   def preposition_score_params
     params.permit(:preposition_score)
+  end
+
+  def unexp_score_params
+    params.permit(:unexp_score)
   end
 end
