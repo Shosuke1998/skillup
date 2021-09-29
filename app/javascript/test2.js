@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
     answerModal.classList.remove("hidden");
     setTimeout(function() {
       answerModal.classList.add("hidden");
-    },4000);
+    },1500);
     wordIndex++;
     setWord();
     word.focus();
