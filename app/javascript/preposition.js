@@ -54,7 +54,7 @@ prepositionButton.addEventListener('click',() => {
   prepositionAnswerModal.classList.remove("hidden");
   setTimeout(function() {
     prepositionAnswerModal.classList.add("hidden");
-  },4000);
+  },1500);
   prepositionIndex++;
   setPreposition();
   preposition.focus();
