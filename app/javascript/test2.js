@@ -1,11 +1,24 @@
 window.addEventListener('load', function(){
   const words = [
-    ['勉強する','study'],
-    ['走る','run'],
-    ['運動する','practice'],
-    ['成功する','success'],
-    ['失敗する','fail'],
-    ['影響する','influence'],
+    ['〜するために（3語）','in order to'],
+    ['言い換えれば、すなわち（3語）','in other words'],
+    ['言い換えると、いい改める（5語）','To put it another way'],
+    ['ということは、すなわち（4語）','That is to say'],
+    ['そのためにも（3語）','To that end'],
+    ['しかしながら（1語）','However'],
+    ['その一方で（4語）','On the other hand'],
+    ['そう入っても、かといって（3語）','Having said that'],
+    ['対照的に（2語）','By contrast'],
+    ['したがって（2語）','That said'],
+    ['それにもかかわらず（1語）','Yet'],
+    ['その上、さらに（1語）','Moreover'],
+    ['なお、その上、さらに（1語）','Furthermore'],
+    ['同様に（1語）（Lから）','Likewise'],
+    ['同様に（1語）（Sから）','Similarly'],
+    ['〜と同様に（3語）','As well as'],
+    ['考慮において、...を心に置いて（3語）','with in mind'],
+    ['...を考慮して（3語）','in view of'],
+    ['結論として、要するに（3語）','In conclusion'],
   ];
   const askWord = document.getElementById("ask-word");
   const word = document.getElementById("word");
@@ -19,7 +32,7 @@ window.addEventListener('load', function(){
   console.log("a");
   button.addEventListener('click',() => {
     console.log("A")
-    let ans = word.value.toLowerCase();
+    let ans = word.value
     let message;
     if(ans === words[wordIndex][1]){
       correct++;
