@@ -7,4 +7,5 @@ class User < ApplicationRecord
   validates :pre_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }
   validates :input_words, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
   validates :preposition_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
+  validates :unexp_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
 end

@@ -36,7 +36,7 @@
 </div>
 <div class="one-rank">
   <div class="exp-rank">
-    <p>基本動詞編</p>
+    <p>英作文で使えるフレーズ編</p>
   </div>
   <div class="rank-area">
     <div class="image-area">
@@ -89,6 +89,36 @@
         <% else %>  
           <% last_preposition_score = preposition_user.preposition_score %>
           <div class="a-rank"><%= y %>位<%= preposition_user.name %>さん：<%= preposition_user.preposition_score %>点</div>
+        <% end %>  
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="one-rank">
+  <div class="exp-rank">
+    <p>意外な意味を持つ英単語編</p>
+  </div>
+  <div class="rank-area">
+    <div class="image-area">
+      <%= image_tag("gold_medal.png",class:"medal-image") %>
+      <%= image_tag("silver-medal.png",class:"medal-image") %>
+      <%= image_tag("blonze-medal.png",class:"medal-image") %>
+    </div>
+    <div class="main-ranking">
+      <% last_unexp_score =0 %>
+      <% z = 1%>
+      <% @unexp_users.each.with_index(1) do |unexp_user,index| %>
+        <% if index == 1 %>
+          <% last_unexp_score = unexp_user.unexp_score%>
+        <% end %>
+        <% if unexp_user.unexp_score !=  last_unexp_score %>
+          <% z = index %>
+          <div class="a-rank"><%= z %>位<%= unexp_user.name %>さん：<%= unexp_user.unexp_score %>点
+          <% last_unexp_score = unexp_user.unexp_score%>
+          </div>
+        <% else %>  
+          <% last_unexp_score = unexp_user.unexp_score %>
+          <div class="a-rank"><%= z %>位<%= unexp_user.name %>さん：<%= unexp_user.unexp_score %>点</div>
         <% end %>  
       <% end %>
     </div>

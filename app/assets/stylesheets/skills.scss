@@ -480,9 +480,9 @@ header{
 
 
 #answer-modal{
-  border:2px solid black;
+  // border:2px solid black;
   transition:0.4s;
-  width:600px;
+  width:700px;
   height:100px;
   text-align:center;
   margin:10px auto 0;
@@ -536,13 +536,13 @@ header{
   display:block;
 }
 #word-answer{
-  width:600px;
+  width:700px;
   height:100px;
   text-align:center;
   margin:0 auto 0;
   line-height:100px;
-  font-size:20px;
-  // border:1px solid black;
+  font-size:15px;
+  border:2px solid black;
 }
 
 .rank-title{
