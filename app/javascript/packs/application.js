@@ -11,6 +11,7 @@ require('jquery')
 require("../quiz")
 require("../test")
 require("../test2")
+require("../test3")
 require("../preposition")
 require("../exp_preposition")
 // Uncomment to copy all static images under ../images to the output folder and reference
