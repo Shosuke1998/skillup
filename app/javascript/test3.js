@@ -11,56 +11,55 @@ window.addEventListener('load', function(){
   const timer = document.getElementById("timer");
   const timeRecord = document.getElementById("time-record");
   const uneTestSet = [
-    {q:'body',c:['死体、機関','主産物','製品','不良品']},
-    {q:'case',c:['真実、事件','自身のある','自覚のある','無意識な']},
-    {q:'landscape',c:['情勢','たくさんの','~できない','神経質な']},
-    // {q:'screen',c:['遮蔽物','営利の','問題な','軽率な']},
-    // {q:'slip',c:['うっかりした間違い','走る','転ぶ','倒れる']},
-    // {q:'produce',c:['取り出す','実体験','研究','成果']},
-    // {q:'commit A to B',c:['AをBにゆだねる','政治家','秘書','大臣']},
-    // {q:'contain',c:['感情を抑える','市の','役所の','町の']},
-    // {q:'coin',c:['新語を作り出す','悍しい','しんどい','頑張っている']},
-    // {q:'speak',c:['表現を使う','接尾辞','真ん中の','名詞']},
-    // {q:'somebody',c:['大物','誕生','診察','前提']},
-    // {q:'cost',c:['犠牲','考察','事例','正論']},
-    // {q:'fancy',c:['高級な','過ちを犯す','叩く','触る']},
-    // {q:'deliver',c:['述べる、成し遂げる','ふりをする','先行する','支持する']},
-    // {q:'wear well',c:['長持ちする','県の','以前の','営利の']},
-    // {q:'betray',c:['感情をうっかり漏らす','普及している','望ましい','妊娠した']},
-    // {q:'not a grain of',c:['少しの〜もない','ふりをする','前に手を置く','交代する']},
-    // {q:'substance',c:['本質','研究','事件','犯罪']},
-    // {q:'speech',c:['言語','研究','事件','犯罪']},
-    // {q:'harbor',c:['悪意を心に抱く','研究','事件','犯罪']},
-    // {q:'mark',c:['特徴付ける','研究','事件','犯罪']},
-    // {q:'classic',c:['古典的な','研究','事件','犯罪']},
-    // {q:'late',c:['最近死んだ','研究','事件','犯罪']},
-    // {q:'product',c:['結果','研究','事件','犯罪']},
-    // {q:'entertain',c:['考えや感情を抱く','研究','事件','犯罪']},
-    // {q:'haunt',c:['不幸な考えがつきまとう','研究','事件','犯罪']},
-    // {q:'carry',c:['属性を持っている','研究','事件','犯罪']},
-    // {q:'invent',c:['でっち上げる','研究','事件','犯罪']},
-    // {q:'shade',c:['ちょっとした違い','研究','事件','犯罪']},
-    // {q:'trick',c:['コツ','研究','事件','犯罪']},
-    // {q:'reserve',c:['遠慮','研究','事件','犯罪']},
-    // {q:'alarm',c:['〜を不安にさせる','研究','事件','犯罪']},
-    // {q:'help',c:['避ける','研究','事件','犯罪']},
-    // {q:'compose',c:['落ち着かせる','研究','事件','犯罪']},
-    // {q:'do',c:['Sで結構だ','研究','事件','犯罪']},
-    // {q:'say',c:['発言権','研究','事件','犯罪']},
-    // {q:'game',c:['獲物','研究','事件','犯罪']},
-    // {q:'start',c:['ハッとすること','研究','事件','犯罪']},
-    // {q:'leave',c:['許可','研究','事件','犯罪']},
-    // {q:'school',c:['学派','研究','事件','犯罪']},
-    // {q:'but',c:['ほんの','研究','事件','犯罪']},
-    // {q:'height',c:['絶頂','研究','事件','犯罪']},
-    // {q:'enjoy',c:['特権や良いものを持っている','研究','事件','犯罪']},
-    // {q:'head',c:['率いる','研究','事件','犯罪']},
-    // {q:'platform',c:['綱領','研究','事件','犯罪']},
-    // {q:'a touch of',c:['少しの','研究','事件','犯罪']},
-    // {q:'comfort',c:['慰め','研究','事件','犯罪']},
+    {q:'body',c:['死体、機関','書籍','物質','科学']},
+    {q:'case',c:['真実、事件','問題','机','文房具']},
+    {q:'landscape',c:['情勢','公園','写真','飲み物']},
+    {q:'screen',c:['遮蔽物','光','炎','メガネ']},
+    {q:'slip',c:['うっかりした間違い','タイヤ','ぺん','真実']},
+    {q:'produce',c:['取り出す','先行する','叫ぶ','ふりをする']},
+    {q:'commit A to B',c:['AをBにゆだねる','AとBを離す','AとBをくっける','AとBを投げる']},
+    {q:'contain',c:['感情を抑える','感情を爆発させる','どんな感情かわかろうとする','感情をなくす']},
+    {q:'coin',c:['新語を作り出す','新語をきく','新語を当てる','受賞する']},
+    {q:'speak',c:['表現を使う','ある表現を嫌う','表現を使わずに伝える','話しかけられる']},
+    {q:'somebody',c:['大物','物','実体験','前提']},
+    {q:'cost',c:['犠牲','正論','名詞','研究']},
+    {q:'fancy',c:['高級な','早い','遅い','敏感な']},
+    {q:'deliver',c:['述べる、成し遂げる','ふりをする','先行する','支持する']},
+    {q:'wear well',c:['長持ちする','うまくいく','優先する','妊娠する']},
+    {q:'betray',c:['感情をうっかり漏らす','叫ぶ','望む','急に走る']},
+    {q:'not a grain of',c:['少しの〜もない','全く穀物がない','その代わりに','その上に']},
+    {q:'substance',c:['本質','研究','事件','犯罪']},
+    {q:'speech',c:['言語','書籍','物質','図書館']},
+    {q:'harbor',c:['悪意を心に抱く','打つ','撃つ','怖がる']},
+    {q:'mark',c:['特徴付ける','書く','直す','壊す']},
+    {q:'classic',c:['古典的な','現代的な','髪の','奇妙な']},
+    {q:'late',c:['最近死んだ','最も古い','早い','辛い']},
+    {q:'product',c:['結果','研究','事件','犯罪']},
+    {q:'entertain',c:['考えや感情を抱く','持ち上げる','爆発させる','先行する']},
+    {q:'haunt',c:['不幸な考えがつきまとう','狩る','発散する','壊す']},
+    {q:'carry',c:['属性を持っている','ぶつける','歩き回る','計算する']},
+    {q:'invent',c:['でっち上げる','過ちを犯す','計算する','本を読む']},
+    {q:'shade',c:['ちょっとした違い','動き','学校','犯罪']},
+    {q:'trick',c:['コツ','治療','旅行','株式会社']},
+    {q:'reserve',c:['遠慮','課題','川の流域','仲間']},
+    {q:'alarm',c:['〜を不安にさせる','癒す','攻撃する','公表する']},
+    {q:'help',c:['避ける','ける','洗濯物','はり']},
+    {q:'compose',c:['落ち着かせる','減少する','晒す','引き起こす']},
+    {q:'say',c:['発言権','脅威','結果','冒険']},
+    {q:'game',c:['獲物','困難','指標','容量']},
+    {q:'start',c:['ハッとすること','報道','消化不良','電子']},
+    {q:'leave',c:['許可','機会','到来','赤字']},
+    {q:'school',c:['学派','いじめ','悲惨','針']},
+    {q:'but',c:['ほんの','かなり多くの','悲惨な','素晴らしい']},
+    {q:'height',c:['絶頂','仕事','概要','職業']},
+    {q:'enjoy',c:['特権や良いものを持っている','調査する','報道する','いじめる']},
+    {q:'head',c:['率いる','頭を叩く','経験する','脅威となる']},
+    {q:'platform',c:['綱領','地元のマーケット','板','代謝']},
+    {q:'a touch of',c:['少しの','壮大な','かなり多くの','多目的な']},
+    {q:'comfort',c:['慰め','海岸','株式会社','連合']},
   ];
   let count = 0;
-  let isAnswered;
+  let uneIsAnswered;
   let score = 0;
   let uneStartTime;
   let uneTimeoutId;
@@ -74,11 +73,12 @@ window.addEventListener('load', function(){
     return array;
   }
 
-  function checkAnswer(li){
-    if(isAnswered){
+  function uneCheckAnswer(li){
+    if(uneIsAnswered){
+      console.log(uneIsAnswered)
       return;
     }
-    isAnswered = true;
+    uneIsAnswered = true;
     li.classList.add("selected")
     if(li.textContent === uneTestSet[count].c[0]){
       score++;
@@ -90,7 +90,7 @@ window.addEventListener('load', function(){
 
   
   function countUp() {
-    console.log(Date.now() - uneStartTime)
+    // console.log(Date.now() - uneStartTime)
     const d = new Date(Date.now() - uneStartTime);
     const minutes = String(d.getMinutes()).padStart(2,'0');
     const seconds = String(d.getSeconds()).padStart(2,'0');
@@ -107,7 +107,7 @@ window.addEventListener('load', function(){
   
   
   function setTest(){
-    isAnswered = false;
+    uneIsAnswered = false;
     testNum.innerHTML = count + 1;
     uneQuestion.innerHTML = uneTestSet[count].q;
     while(uneChoices.firstChild){
@@ -119,8 +119,7 @@ window.addEventListener('load', function(){
       li.innerHTML = choice
       li.classList.add("choice");
       li.addEventListener('click',() => {
-        li.classList.add("selected");
-      checkAnswer(li);
+        uneCheckAnswer(li);
     })
     uneChoices.appendChild(li);
   });
@@ -136,7 +135,7 @@ window.addEventListener('load', function(){
 
 
   btn.addEventListener('click',() => {
-    if(isAnswered === false){
+    if(uneIsAnswered === false){
       return
     }
     if(count === uneTestSet.length - 1){

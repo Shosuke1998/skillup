@@ -1,5 +1,5 @@
 class SkillsController < ApplicationController
-  before_action :authenticate_user!, only: [:test, :test2, :preposition]
+  before_action :authenticate_user!, only: [:test, :test2, :preposition, :test3]
   def index
   end
 
