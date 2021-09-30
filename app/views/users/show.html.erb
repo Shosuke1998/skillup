@@ -10,15 +10,7 @@
     <div class="check-list">
       <p class="checkbox">pre-,per-,pro-,pur-編:<%= @user.pre_score%>点</p>
     </div>
-    <% if @user.pre_score == 100 %>
-      <div class="master">master!</div>
-    <% end %>  
-  </li>
-  <li class="check-box-area">
-    <div class="check-list">
-      <p class="checkbox">英作文で使えるフレーズ編:<%= @user.input_words%>点</p>
-    </div>
-    <% if @user.input_words == 100 %>
+    <% if @user.pre_score == 18 %>
       <div class="master">master!</div>
     <% end %>  
   </li>
@@ -26,7 +18,15 @@
     <div class="check-list">
       <p class="checkbox">前置詞編:<%= @user.preposition_score%>点</p>
     </div>
-    <% if @user.preposition_score == 100 %>
+    <% if @user.preposition_score == 24 %>
+      <div class="master">master!</div>
+    <% end %>  
+  </li>
+  <li class="check-box-area">
+    <div class="check-list">
+      <p class="checkbox">英作文で使えるフレーズ編:<%= @user.input_words%>点</p>
+    </div>
+    <% if @user.input_words == 19 %>
       <div class="master">master!</div>
     <% end %>  
   </li>
@@ -34,7 +34,7 @@
     <div class="check-list">
       <p class="checkbox">意外な意味を持つ英単語:<%= @user.unexp_score%>点</p>
     </div>
-    <% if @user.unexp_score == 100 %>
+    <% if @user.unexp_score == 46 %>
       <div class="master">master!</div>
     <% end %>  
   </li>

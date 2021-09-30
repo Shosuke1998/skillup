@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   validates :name, presence: true, length: { maximum: 6 }
-  validates :pre_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }
-  validates :input_words, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
-  validates :preposition_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
-  validates :unexp_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 100 }   
+  validates :pre_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 18 }
+  validates :input_words, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 24 }   
+  validates :preposition_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 19 }   
+  validates :unexp_score, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 46 }   
 end
