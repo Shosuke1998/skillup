@@ -1,0 +1,34 @@
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
+<div class="test-text">
+  第<span id="testNum"></span>問
+</div>
+<div id="text-area">
+  <div id="question-text">次の単語の意味の場所を押してください</div>
+  <div class="image-text">
+    <div class="image-space">
+      <%= image_tag("animal_study_inu.png",class:"image") %>
+    </div>
+    <div id ="sim-question"></div>
+    <div class="image-space">
+      <%= image_tag("large_U-neko1.jpeg",class:"image") %>
+    </div>
+  </div>
+  <div class="choices-area">
+    <ul id ="sim-choices">
+    </ul>
+  </div>
+  <div id ="btn">次へ</div>
+  <div id="form" class="hidden" >
+    <%= form_with(url: skill_path(current_user.id),local: true,class:"score-form",method: :put) do |f| %>
+      <%# <%= f.label :メールアドレス<br />  %>
+      <div id = "score-area"></div>
+      <%= f.number_field :pre_score, autofocus: true,class:"input-default",id:"pre-score" %>
+      <%= f.submit "得点を記録する",class:"score-btn" %>
+      <% end %> 
+    <div id="time-record-area">タイム:<span id="time-record">00:00</span></div>  
+    <%= link_to 'もう一度行う',test_skills_path,class:"once-btn" %> 
+  </div>
+</div>
+<div id ="timer-area">経過時間：<span id="timer">00:00</span></div>
