@@ -309,11 +309,23 @@ header{
   border-bottom:3px solid black;
   text-align:center;
 }
+#sim-question{
+  font-size:20px;
+  width:200px;
+  border-bottom:3px solid black;
+  text-align:center;
+}
 
 #choices > li.selected{
   background:#4169e1;
 }
 #une-choices > li.selected{
+  background:#4169e1;
+}
+#une-choices > li.selected{
+  background:#4169e1;
+}
+#sim-choices > li.selected{
   background:#4169e1;
 }
 #form{

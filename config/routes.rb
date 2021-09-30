@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to:'skills#index'
-  resources :skills, only: [:index, :update,] do
+  resources :skills, only: [:index, :update] do
     collection do
       get 'study'
       get 'test'
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get 'test3'
       get 'opposite_sheet'
       get 'similar'
+      get 'similar_problem'
     end
   end
   resources :users, only: :show
