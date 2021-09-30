@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'opposite'
       get 'test3'
       get 'opposite_sheet'
+      get 'similar'
     end
   end
   resources :users, only: :show
