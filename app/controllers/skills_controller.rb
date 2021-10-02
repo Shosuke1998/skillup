@@ -31,6 +31,7 @@ class SkillsController < ApplicationController
     @verb_users = User.all.order(input_words: :DESC).limit(3)
     @preposition_users = User.all.order(preposition_score: :DESC).limit(3)
     @unexp_users = User.all.order(unexp_score: :DESC).limit(3)
+    @similar_users = User.all.order(similar_score: :DESC).limit(3)
   end
 
   # def preposition

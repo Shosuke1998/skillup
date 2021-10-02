@@ -1,0 +1,30 @@
+<div class="upper-content">
+  <%= link_to('トップページに戻る',root_path,class:"top-btn") %>
+</div>
+<div class="contents">
+  <p id ="unexpected-problem-text"></p>  
+  <div class="answer-btn"  id ="answer-btn">
+    答えを見る
+  </div>
+</div>
+
+<div class="under-contents">
+  <div id ="prev">前へ</div>
+  <div id="unexpected-answer" class="hidden">
+    
+  </div>
+  <div id ="next">次へ</div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#answer-btn').click(function(){
+      if($('#unexpected-answer').hasClass('hidden')){
+        $('#unexpected-answer').removeClass('hidden')
+        $('#answer-btn').text('答えを隠す')
+      } else {
+        $('#unexpected-answer').addClass('hidden')
+        $('#answer-btn').text('答えを見る')
+      }
+    })
+  });
+</script>
