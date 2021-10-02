@@ -16,6 +16,9 @@ Rails.application.routes.draw do
       get 'opposite_sheet'
       get 'similar'
       get 'similar_problem'
+      get 'similar_sheet'
+      get 'unexpect'
+      get 'unexpect_sheet'
     end
   end
   resources :users, only: :show

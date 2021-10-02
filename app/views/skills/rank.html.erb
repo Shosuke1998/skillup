@@ -124,5 +124,35 @@
     </div>
   </div>
 </div>
+<div class="one-rank">
+  <div class="exp-rank">
+    <p>類義語編(master:46点)</p>
+  </div>
+  <div class="rank-area">
+    <div class="image-area">
+      <%= image_tag("gold_medal.png",class:"medal-image") %>
+      <%= image_tag("silver-medal.png",class:"medal-image") %>
+      <%= image_tag("blonze-medal.png",class:"medal-image") %>
+    </div>
+    <div class="main-ranking">
+      <% last_similar_score =0 %>
+      <% w = 1%>
+      <% @similar_users.each.with_index(1) do |similar_user,index| %>
+        <% if index == 1 %>
+          <% last_similar_score = similar_user.similar_score%>
+        <% end %>
+        <% if similar_user.similar_score !=  last_similar_score %>
+          <% w = index %>
+          <div class="a-rank"><%= w %>位<%= similar_user.name %>さん：<%= similar_user.similar_score %>点
+          <% last_similar_score = similar_user.similar_score%>
+          </div>
+        <% else %>  
+          <% last_similar_score = similar_user.similar_score %>
+          <div class="a-rank"><%= w %>位<%= similar_user.name %>さん：<%= similar_user.similar_score %>点</div>
+        <% end %>  
+      <% end %>
+    </div>
+  </div>
+</div>
 
 
