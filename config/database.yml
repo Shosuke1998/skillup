@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: skillup_production
-  username: skillup
-  password: <%= ENV['SKILLUP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
