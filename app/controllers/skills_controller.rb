@@ -1,5 +1,5 @@
 class SkillsController < ApplicationController
-  before_action :authenticate_user!, only: [:test, :test2, :preposition, :test3]
+  before_action :authenticate_user!, only: [:test, :test2, :preposition, :test3, :similar_problem]
   def index
   end
 
@@ -11,6 +11,12 @@ class SkillsController < ApplicationController
   end
 
   def test2
+  end
+
+  def test3
+  end
+
+  def similar_problem
   end
 
   def update
