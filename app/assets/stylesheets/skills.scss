@@ -188,15 +188,22 @@ header{
   text-decoration:none;
 }
 .upper-content{
-  border:1px solid black;
-  width:300px;
-  height:80px;
+  // border:1px solid black;
+  background:#BBBBBB;
   text-align:center;
-  margin:10px auto 0;
-  font-size:25px;
-  line-height:80px;
-  background:silver;
+  margin:20px auto 0;
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
   border-radius:4px;
+  width:300px;
+  height:50px;
+  line-height:50px;
+  font-size:15px;
 }
 .upper-content:hover{
   opacity:0.7;
