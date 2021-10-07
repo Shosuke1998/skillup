@@ -1,3 +1,4 @@
+<div class="registration-area">
 <h2 class="sign-up-in">新規登録</h2>
 
 
@@ -27,30 +28,33 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"input-default" %>
   </div>
 
-  <div class="field">
+  
+
+  <div class="field nothing">
     <%= f.label :得点（0と記入） %><br />
     <%= f.number_field :pre_score, autofocus: true,class:"input-default", :value =>0 %>
   </div>
 
-  <div class="field">
+  <div class="field nothing">
     <%= f.label :得点（0と記入） %><br />
     <%= f.number_field :input_words, autofocus: true,class:"input-default", :value =>0 %>
   </div>
-  <div class="field">
+  <div class="field nothing">
     <%= f.label :得点（0と記入） %><br />
     <%= f.number_field :preposition_score, autofocus: true,class:"input-default", :value =>0 %>
   </div>
-  <div class="field">
+  <div class="field nothing">
     <%= f.label :得点（0と記入） %><br />
     <%= f.number_field :unexp_score, autofocus: true,class:"input-default", :value =>0 %>
   </div>
-  <div class="field">
-    <%= f.label :得点（0と記入） %><br />
+  <div class="field nothing">
+    <%= f.label :得点（0と記入）%><br />
     <%= f.number_field :similar_score, autofocus: true,class:"input-default", :value =>0 %>
-  </div>
+  </div> 
 
   <div class="actions">
-    <%= f.submit "Sign up",class:"submit-btn" %>
+    <%= f.submit "登録する",class:"submit-btn" %>
   </div>
-<% end %>
 
+<% end %>
+</div>

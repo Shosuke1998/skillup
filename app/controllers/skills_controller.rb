@@ -48,6 +48,8 @@ class SkillsController < ApplicationController
 
   def preposition_img
   end
+
+  
   
 
   private
