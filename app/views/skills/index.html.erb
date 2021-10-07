@@ -1,21 +1,21 @@
 <header>
   <div class="header-left">
     <% if user_signed_in? %>
-      <div class="logout-btn">
+      <div class="logout-btn header-btn">
         <%= link_to('ログアウト',destroy_user_session_path,class:"btn",method: :delete) %>
       </div>
-      <div class="mypage-btn">
+      <div class="mypage-btn header-btn">
         <%= link_to("#{current_user.name}のページへ",user_path(current_user.id),class:"btn") %>
       </div>
     <% else %>
-      <div class="login-btn">
+      <div class="login-btn header-btn">
         <%= link_to('ログインする',new_user_session_path,class:"btn") %>
       </div>
-      <div class="new-regist-btn">
+      <div class="new-regist-btn header-btn">
         <%= link_to('新規登録',new_user_registration_path,class:"btn") %>
       </div>
     <% end %>
-    <div class="mypage-btn"></div>
+    
   </div> 
   <div class ="header-right">
     <p class="first-p">skillup</p>
