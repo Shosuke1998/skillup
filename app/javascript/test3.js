@@ -10,6 +10,7 @@ window.addEventListener('load', function(){
   const scoreBtn = document.getElementsByClassName("score-btn");
   const timer = document.getElementById("timer");
   const timeRecord = document.getElementById("time-record");
+  const timerArea = document.getElementById("timer-area")
   const uneTestSet = [
     {q:'body',c:['死体、機関','書籍','物質','科学']},
     {q:'case',c:['真実、事件','問題','机','文房具']},
@@ -150,6 +151,7 @@ window.addEventListener('load', function(){
       timeRecord.innerHTML = `${m}:${s}:${ms}`;
       // scoreInput.innerHTML = score;
       form.classList.remove("hidden");
+      timerArea.classList.add("hidden")
     } else {
       count++;
       setTest();

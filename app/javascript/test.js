@@ -10,6 +10,7 @@ window.addEventListener('load', function(){
   const scoreBtn = document.getElementsByClassName("score-btn");
   const timer = document.getElementById("timer");
   const timeRecord = document.getElementById("time-record");
+  const timerArea = document.getElementById("timer-area")
   const testSet = [
     {q:'byproduct',c:['副産物','主産物','製品','不良品']},
     {q:'imprudent',c:['軽率な','自身のある','自覚のある','無意識な']},
@@ -123,6 +124,7 @@ window.addEventListener('load', function(){
       timeRecord.innerHTML = `${m}:${s}:${ms}`;
       // timer.innerHTML = "0";
       form.classList.remove("hidden");
+      timerArea.classList.add("hidden")
     } else {
       count++;
       setTest();
