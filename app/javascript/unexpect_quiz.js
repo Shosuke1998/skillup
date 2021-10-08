@@ -3,7 +3,8 @@
     const prev = document.getElementById("prev")
     const next = document.getElementById("next")
     const uneProblem = document.getElementById("unexpected-problem-text");
-    const uneAnswer = document.getElementById("unexpected-answer")
+    const uneAnswer = document.getElementById("unexpected-answer");
+    const answerBtn = document.getElementById("answer-btn")
     const uneQuizSet =[
       {p:'body',a:'死体、機関'},
       {p:'case',a:'真実、事件'},
@@ -68,6 +69,7 @@
       }
       if(uneAnswer.classList.contains("hidden") === false){
         uneAnswer.classList.add("hidden")
+        answerBtn.innerHTML = "答えを見る"
       }
       uneProblem.innerHTML = uneQuizSet[uneCurrentNum].p
       uneAnswer.innerHTML = uneQuizSet[uneCurrentNum].a
@@ -81,6 +83,7 @@
       }
       if(uneAnswer.classList.contains("hidden") === false){
         uneAnswer.classList.add("hidden")
+        answerBtn.innerHTML = "答えを見る"
       }
       uneProblem.innerHTML = uneQuizSet[uneCurrentNum].p
       uneAnswer.innerHTML = uneQuizSet[uneCurrentNum].a

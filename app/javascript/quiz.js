@@ -2,7 +2,8 @@ window.addEventListener('load',function(){
   const prev = document.getElementById("prev")
   const next = document.getElementById("next")
   const problem = document.getElementById("problem-text");
-  const answer = document.getElementById("answer")
+  const answer = document.getElementById("answer");
+  const answerBtn = document.getElementById("answer-btn")
   const quizSet =[
     {p:'byproduct',a:'by:副次的な,pro:前に→名:副産物'},
     {p:'imprudent',a:'im:否定,pro:前に,vide:見る→前を見据えないような→形:軽率な'},
@@ -39,6 +40,7 @@ window.addEventListener('load',function(){
     }
     if(answer.classList.contains("hidden") === false){
       answer.classList.add("hidden")
+      answerBtn.innerHTML = "答えを見る"
     }
     problem.innerHTML = quizSet[currentNum].p
     answer.innerHTML = quizSet[currentNum].a
@@ -52,6 +54,7 @@ window.addEventListener('load',function(){
     }
     if(answer.classList.contains("hidden") === false){
       answer.classList.add("hidden")
+      answerBtn.innerHTML = "答えを見る"
     }
     problem.innerHTML = quizSet[currentNum].p
     answer.innerHTML = quizSet[currentNum].a

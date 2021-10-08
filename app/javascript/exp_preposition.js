@@ -45,6 +45,7 @@ window.addEventListener('load', function(){
     }
     if(expPreposition.classList.contains("hidden") === false){
       expPreposition.classList.add("hidden")
+      changeBtn.innerHTML = "説明を見る"
     }
     insertPrepositionArea.innerHTML = `${prepositionSet[currentPre].p}で思い浮かぶこと`
     expPreposition.innerHTML = prepositionSet[currentPre].a
@@ -58,6 +59,7 @@ window.addEventListener('load', function(){
     }
     if(expPreposition.classList.contains("hidden") === false){
       expPreposition.classList.add("hidden")
+      changeBtn.innerHTML = "説明を見る"
     }
     insertPrepositionArea.innerHTML = `${prepositionSet[currentPre].p}で思い浮かぶこと`
     expPreposition.innerHTML = prepositionSet[currentPre].a
