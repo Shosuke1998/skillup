@@ -41,6 +41,8 @@ http://52.192.251.239/
 
 ## 機能についての説明
 
-- 接頭辞がpre,proの単語の意味を覚える
 [![Image from Gyazo](https://i.gyazo.com/766b19f64ac300aff91aff4601f0c519.gif)](https://gyazo.com/766b19f64ac300aff91aff4601f0c519)
-単語の特徴に注目して暗記を進めていきます。
+単語の特徴に注目して暗記を進めていきます。そして覚えられたと思ったらテストに挑戦します。
+[![Image from Gyazo](https://i.gyazo.com/afd6b713a670fcf3de3b726ce61473c4.gif)](https://gyazo.com/afd6b713a670fcf3de3b726ce61473c4)
+終わったら点数を記入します。
+[![Image from Gyazo](https://i.gyazo.com/2ff2b321ee7c2414325471f31cdd557b.gif)](https://gyazo.com/2ff2b321ee7c2414325471f31cdd557b)
