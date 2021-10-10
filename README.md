@@ -62,3 +62,28 @@ http://52.192.251.239/
 得点を記入していきます。
 [![Image from Gyazo](https://i.gyazo.com/6bfe572e56d986025349487ab4cfb74a.gif)](https://gyazo.com/6bfe572e56d986025349487ab4cfb74a)
 これを覚えるまで繰り返します。
+
+次に反対語です。反対語も類義語と同様に暗記シートと資料を繰り返し用いて暗記路していきます。
+[![Image from Gyazo](https://i.gyazo.com/fda61121b684b21f984ab6982ff3223b.gif)](https://gyazo.com/fda61121b684b21f984ab6982ff3223b)
+
+[![Image from Gyazo](https://i.gyazo.com/b827da362024bd2cf8e583e8a3da4155.gif)](https://gyazo.com/b827da362024bd2cf8e583e8a3da4155)
+
+英作文にも対応しています。英作文で使える論理関係を表す熟語もテストできます。
+
+[![Image from Gyazo](https://i.gyazo.com/31339bb3745e530d9fdd9d7aeab85b49.gif)](https://gyazo.com/31339bb3745e530d9fdd9d7aeab85b49)
+得点を記入していきます。
+
+[![Image from Gyazo](https://i.gyazo.com/3e7a6305db092ee5b89f973da57a943b.gif)](https://gyazo.com/3e7a6305db092ee5b89f973da57a943b)
+
+そして最後に意外な意味を持つ英単語をが記入することができます。
+
+資料よりどんな単語がありそれがどんな意味なのかを把握します。
+
+次に覚えているか確認していきます。
+[![Image from Gyazo](https://i.gyazo.com/d19a1535074ff5744b2df7500e651ff6.gif)](https://gyazo.com/d19a1535074ff5744b2df7500e651ff6)
+
+覚えられたと思ったらテストをしていきます。
+[![Image from Gyazo](https://i.gyazo.com/5cd5fa32732be5f557005311eaa4a853.gif)](https://gyazo.com/5cd5fa32732be5f557005311eaa4a853)
+
+　得点を記入していきます。
+[![Image from Gyazo](https://i.gyazo.com/933051f9386f6aef2935c56b0bab080b.gif)](https://gyazo.com/933051f9386f6aef2935c56b0bab080b)
