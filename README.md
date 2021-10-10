@@ -87,3 +87,6 @@ http://52.192.251.239/
 
 　得点を記入していきます。
 [![Image from Gyazo](https://i.gyazo.com/933051f9386f6aef2935c56b0bab080b.gif)](https://gyazo.com/933051f9386f6aef2935c56b0bab080b)
+
+そして最後にランキング機能を見ます。他の人と比べて競争心を持っていただき学習に対する意欲を上げていきます。
+[![Image from Gyazo](https://i.gyazo.com/bdfa2c6479010f2e90e3d681ada012af.gif)](https://gyazo.com/bdfa2c6479010f2e90e3d681ada012af)
