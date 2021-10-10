@@ -52,3 +52,13 @@ http://52.192.251.239/
 
 終わったら点数を記入します。
 [![Image from Gyazo](https://i.gyazo.com/2ff2b321ee7c2414325471f31cdd557b.gif)](https://gyazo.com/2ff2b321ee7c2414325471f31cdd557b)
+
+類義語に関しては資料と暗記シートを活用して暗記をしていきます。
+[![Image from Gyazo](https://i.gyazo.com/942f8b0b2487e8e56e267709cb928acf.gif)](https://gyazo.com/942f8b0b2487e8e56e267709cb928acf)
+大体理解したと思ったら類義語暗記シートを見ます。意味が書いてある部分が空欄になっているので意味を想像、または紙に書きながら確認していきます。
+[![Image from Gyazo](https://i.gyazo.com/4a0e6e19ecb8ffebd7cd9949ffd0d3b3.gif)](https://gyazo.com/4a0e6e19ecb8ffebd7cd9949ffd0d3b3)
+覚えることができたと思ったらテストに行きます。
+[![Image from Gyazo](https://i.gyazo.com/505b9612c2124a4f7605647dac2d9117.gif)](https://gyazo.com/505b9612c2124a4f7605647dac2d9117)
+得点を記入していきます。
+[![Image from Gyazo](https://i.gyazo.com/6bfe572e56d986025349487ab4cfb74a.gif)](https://gyazo.com/6bfe572e56d986025349487ab4cfb74a)
+これを覚えるまで繰り返します。
