@@ -6,11 +6,21 @@ skillup
 ## アプリでできること
 英単語を丸暗記ではなく効率的に覚えることができる。
 
-## 🌐 App URL
+##  App URL
 http://52.192.251.239/
 
+## 利用言語
+HTML/CSS,Javascript,Ruby, 
+
+Ruby on rails ,jQuery
+
 ## テストユーザー
+ゲストユーザー設定あり
+
+
 メールアドレス:p@p
+
+
 パスワード:iiiiii6
 
 ## 利用方法
