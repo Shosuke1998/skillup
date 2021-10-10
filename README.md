@@ -90,3 +90,6 @@ http://52.192.251.239/
 
 そして最後にランキング機能を見ます。他の人と比べて競争心を持っていただき学習に対する意欲を上げていきます。
 [![Image from Gyazo](https://i.gyazo.com/bdfa2c6479010f2e90e3d681ada012af.gif)](https://gyazo.com/bdfa2c6479010f2e90e3d681ada012af)
+
+満点をとっていると自分のページでその項目がmasterと表示されます。
+[![Image from Gyazo](https://i.gyazo.com/6cf33289d6dbea46ef99526ba27750df.gif)](https://gyazo.com/6cf33289d6dbea46ef99526ba27750df)
