@@ -14,6 +14,10 @@ HTML/CSS,Javascript,Ruby,
 
 Ruby on rails ,jQuery
 
+## デプロイ
+
+AWS
+
 ## テストユーザー
 ゲストユーザー設定あり
 
