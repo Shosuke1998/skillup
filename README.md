@@ -8,7 +8,7 @@ skillup
 ##  App URL
 http://52.192.251.239/
 
-## 利用言語⇒使用技術(開発環境)
+## 使用技術(開発環境)
 HTML/CSS,Javascript,Ruby, 
 
 Ruby on rails ,jQuery,AWS
