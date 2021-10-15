@@ -83,15 +83,12 @@ window.addEventListener('load', function(){
     li.classList.add("selected")
     if(li.textContent === uneTestSet[count].c[0]){
       score++;
-      // console.log("a");
     } else{
-      // console.log("s");
     }
   }
 
   
   function countUp() {
-    // console.log(Date.now() - uneStartTime)
     const d = new Date(Date.now() - uneStartTime);
     const minutes = String(d.getMinutes()).padStart(2,'0');
     const seconds = String(d.getSeconds()).padStart(2,'0');
@@ -149,7 +146,6 @@ window.addEventListener('load', function(){
       const s = String(d.getSeconds()).padStart(2,'0');
       const ms = String(d.getMilliseconds()).padStart(2,'0');
       timeRecord.innerHTML = `${m}:${s}:${ms}`;
-      // scoreInput.innerHTML = score;
       form.classList.remove("hidden");
       timerArea.classList.add("hidden")
     } else {
